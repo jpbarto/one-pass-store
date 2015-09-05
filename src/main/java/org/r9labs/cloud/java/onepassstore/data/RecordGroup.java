@@ -1,4 +1,4 @@
-package r9labs.cloud.java.onepassstore.data;
+package org.r9labs.cloud.java.onepassstore.data;
 
 import java.util.ArrayList;
 

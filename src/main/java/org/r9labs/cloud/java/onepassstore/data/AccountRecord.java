@@ -1,4 +1,4 @@
-package r9labs.cloud.java.onepassstore.data;
+package org.r9labs.cloud.java.onepassstore.data;
 
 public class AccountRecord {
 	private String name;
@@ -6,6 +6,14 @@ public class AccountRecord {
 	private String password;
 	private String host;
 	private String note;
+	
+	{
+		name = "";
+		username = "";
+		password = "";
+		host = "";
+		note = "";
+	}
 
 	public String getName() {
 		return name;
