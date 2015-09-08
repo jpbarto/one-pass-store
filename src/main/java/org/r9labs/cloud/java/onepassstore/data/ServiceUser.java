@@ -5,7 +5,7 @@ import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 
 @XmlRootElement(name = "user")
-@XmlType(propOrder = { "username", "firstname", "lastname", "email", "defaultGroup" })
+@XmlType(propOrder = { "username", "firstName", "lastName", "email", "defaultGroup" })
 public class ServiceUser {
 	private String username;
 	private String firstName;
