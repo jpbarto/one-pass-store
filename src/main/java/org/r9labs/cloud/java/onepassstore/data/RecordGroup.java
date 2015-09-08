@@ -10,4 +10,22 @@ public class RecordGroup {
 		records = new ArrayList<> ();
 		subgroups = new ArrayList<> ();
 	}
+
+	public ArrayList<AccountRecord> getRecords() {
+		return records;
+	}
+
+	public void setRecords(ArrayList<AccountRecord> records) {
+		this.records = records;
+	}
+
+	public ArrayList<RecordGroup> getSubgroups() {
+		return subgroups;
+	}
+
+	public void setSubgroups(ArrayList<RecordGroup> subgroups) {
+		this.subgroups = subgroups;
+	}
+	
+	
 }
