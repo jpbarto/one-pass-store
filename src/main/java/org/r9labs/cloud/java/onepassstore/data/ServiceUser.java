@@ -6,6 +6,10 @@ public class ServiceUser {
 	private String lastName;
 	private String email;
 	private RecordGroup defaultGroup;
+	
+	{
+		defaultGroup = new RecordGroup ();
+	}
 
 	public String getUsername() {
 		return username;
