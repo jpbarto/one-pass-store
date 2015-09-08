@@ -19,8 +19,8 @@
     
     <context:component-scan base-package="org.r9labs.cloud.java.onepassstore.rest">
     </context:component-scan>
-    
+    <!--  
     <sec:http auto-config="true">
     	<sec:intercept-url pattern="/**" requires-channel="https"/>
-    </sec:http>
+    </sec:http> -->
 </beans>
