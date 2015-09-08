@@ -7,16 +7,20 @@ public class RecordGroup {
 	private ArrayList<RecordGroup> subgroups;
 	
 	{
-		records = new ArrayList<> ();
-		subgroups = new ArrayList<> ();
+		records = new ArrayList<AccountRecord> ();
+		subgroups = new ArrayList<RecordGroup> ();
 	}
 
 	public ArrayList<AccountRecord> getRecords() {
 		return records;
 	}
-
-	public void setRecords(ArrayList<AccountRecord> records) {
-		this.records = records;
+	
+	public void addRecord (AccountRecord record) {
+		records.add(record);
+	}
+	
+	public void removeRecord (AccountRecord record) {
+		records.remove(record);
 	}
 
 	public ArrayList<RecordGroup> getSubgroups() {
@@ -26,6 +30,4 @@ public class RecordGroup {
 	public void setSubgroups(ArrayList<RecordGroup> subgroups) {
 		this.subgroups = subgroups;
 	}
-	
-	
 }
