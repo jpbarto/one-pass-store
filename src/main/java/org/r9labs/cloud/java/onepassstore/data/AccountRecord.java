@@ -1,12 +1,18 @@
 package org.r9labs.cloud.java.onepassstore.data;
 
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.XmlType;
+
+@XmlRootElement(name = "account")
+@XmlType(propOrder = { "name", "username", "password", "host", "note" })
 public class AccountRecord {
 	private String name;
 	private String username;
 	private String password;
 	private String host;
 	private String note;
-	
+
 	{
 		name = "";
 		username = "";
@@ -15,6 +21,7 @@ public class AccountRecord {
 		note = "";
 	}
 
+	@XmlElement
 	public String getName() {
 		return name;
 	}
@@ -23,6 +30,7 @@ public class AccountRecord {
 		this.name = name;
 	}
 
+	@XmlElement
 	public String getUsername() {
 		return username;
 	}
@@ -31,6 +39,7 @@ public class AccountRecord {
 		this.username = username;
 	}
 
+	@XmlElement
 	public String getPassword() {
 		return password;
 	}
@@ -39,6 +48,7 @@ public class AccountRecord {
 		this.password = password;
 	}
 
+	@XmlElement
 	public String getHost() {
 		return host;
 	}
@@ -47,6 +57,7 @@ public class AccountRecord {
 		this.host = host;
 	}
 
+	@XmlElement
 	public String getNote() {
 		return note;
 	}

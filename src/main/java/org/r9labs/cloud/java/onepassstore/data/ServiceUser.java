@@ -1,16 +1,23 @@
 package org.r9labs.cloud.java.onepassstore.data;
 
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.XmlType;
+
+@XmlRootElement(name = "user")
+@XmlType(propOrder = { "username", "firstname", "lastname", "email", "defaultGroup" })
 public class ServiceUser {
 	private String username;
 	private String firstName;
 	private String lastName;
 	private String email;
 	private RecordGroup defaultGroup;
-	
+
 	{
-		defaultGroup = new RecordGroup ();
+		defaultGroup = new RecordGroup();
 	}
 
+	@XmlElement
 	public String getUsername() {
 		return username;
 	}
@@ -19,6 +26,7 @@ public class ServiceUser {
 		this.username = username;
 	}
 
+	@XmlElement
 	public String getFirstName() {
 		return firstName;
 	}
@@ -27,6 +35,7 @@ public class ServiceUser {
 		this.firstName = firstName;
 	}
 
+	@XmlElement
 	public String getLastName() {
 		return lastName;
 	}
@@ -35,6 +44,7 @@ public class ServiceUser {
 		this.lastName = lastName;
 	}
 
+	@XmlElement
 	public String getEmail() {
 		return email;
 	}
@@ -43,6 +53,7 @@ public class ServiceUser {
 		this.email = email;
 	}
 
+	@XmlElement
 	public RecordGroup getDefaultGroup() {
 		return defaultGroup;
 	}
